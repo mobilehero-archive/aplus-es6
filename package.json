@@ -1,0 +1,29 @@
+{
+  "name": "alloy-es6",
+  "version": "0.0.1",
+  "description": "a node.js module",
+  "keywords": [],
+  "homepage": "git://github.com/mobilehero/alloy-es6",
+  "bugs": {
+    "url": "https://github.com/mobilehero/alloy-es6/issues",
+    "email": "brenton.house@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Brenton House",
+    "email": "brenton.house@gmail.com",
+    "url": "https://github.com/brentonhouse"
+  },
+  "main": "./alloy-es6.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mobilehero/alloy-es6.git"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=0.10"
+  }
+}

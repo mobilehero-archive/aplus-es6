@@ -1,11 +1,22 @@
 {
-  "name": "alloy-es6",
-  "version": "0.0.1",
-  "description": "a node.js module",
-  "keywords": [],
-  "homepage": "git://github.com/mobilehero/alloy-es6",
+  "name": "@aplus/es6",
+  "version": "0.0.5-beta.1",
+  "description": "Alloy+ plugin for transforming ES6/ES2015 code to Alloy ES5 code",
+  "keywords": [
+    "Appcelerator",
+    "Alloy",
+    "MobileHero",
+    "Alloy+",
+    "aplus",
+    "plugin",
+    "node",
+    "es6",
+    "es2015",
+    "babel"
+  ],
+  "homepage": "git://github.com/mobilehero/aplus-es6",
   "bugs": {
-    "url": "https://github.com/mobilehero/alloy-es6/issues",
+    "url": "https://github.com/mobilehero/aplus-es6/issues",
     "email": "brenton.house@gmail.com"
   },
   "license": "MIT",
@@ -14,15 +25,27 @@
     "email": "brenton.house@gmail.com",
     "url": "https://github.com/brentonhouse"
   },
-  "main": "./alloy-es6.js",
+  "main": "./aplus-es6.js",
   "scripts": {
-    "test": "grunt test"
+    "add": "git add -A",
+    "preadd-version": "npm run add",
+    "add-version": "node scripts/version",
+    "push": "npm run commit --",
+    "commit": "npm run add-version --",
+    "postpush": "git push && git push --tags",
+    "autopull": "node scripts/autopull"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mobilehero/alloy-es6.git"
+    "url": "git://github.com/mobilehero/aplus-es6.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "semver": "^5.1.0"
+  },
+  "dependencies": {
+    "@aplus/babel": "^0.0.5-beta.6",
+    "babel-preset-es2015": "^6.6.0"
+  },
   "engines": {
     "node": ">=0.10"
   }
